@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1265.3334
     height: 694.6667
   m_ShowMode: 4
-  m_Title: Hierarchy
+  m_Title: Inspector
   m_RootView: {fileID: 5}
   m_MinSize: {x: 875, y: 332}
   m_MaxSize: {x: 10000, y: 10000}
@@ -331,7 +331,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 02fbffff
+      m_ExpandedIDs: cefaffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -462,14 +462,14 @@ MonoBehaviour:
   m_StartGridSize: 64
   m_LastFolders: []
   m_LastFoldersGridSize: -1
-  m_LastProjectPath: C:\Users\itamar\My project\Oscilator
+  m_LastProjectPath: C:\Users\itamar\My project\Weekly_ass_2_part_a_Oscilator\Weekly_ass_2_part_a_Oscilator
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: b0230000
     m_LastClickedID: 9136
-    m_ExpandedIDs: 000000001ab600001cb600001eb6000020b60000
+    m_ExpandedIDs: 00000000e2b70000e4b70000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -495,10 +495,10 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_AssetTreeState:
-    scrollPos: {x: 0, y: 19.333313}
+    scrollPos: {x: 0, y: 3.333313}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: ffffffff000000001ab600001cb600001eb6000020b60000
+    m_ExpandedIDs: ffffffff00000000e2b70000e4b70000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1138,7 +1138,7 @@ MonoBehaviour:
   m_AudioPlay: 0
   m_DebugDrawModesUseInteractiveLightBakingData: 0
   m_Position:
-    m_Target: {x: -0.31294656, y: -0.5271406, z: -0.0017526504}
+    m_Target: {x: 1.6178567, y: -0.05473899, z: -0.017133126}
     speed: 2
     m_Value: {x: -0.31294656, y: -0.5271406, z: -0.0017526504}
   m_RenderMode: 0
@@ -1190,7 +1190,7 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 4.2621627
+    m_Target: 5.800214
     speed: 2
     m_Value: 4.2621627
   m_Ortho:

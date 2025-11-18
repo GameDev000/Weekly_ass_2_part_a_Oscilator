@@ -5,7 +5,11 @@ using UnityEngine;
 public class Escilator : MonoBehaviour
 {
     public Vector3 CenterPoint;
-    public float MoveSpeed = 0.7f, amplitude = 0.7f;
+    [SerializeField] public float MoveSpeed = 0.7f;
+    [SerializeField] public float amplitude = 0.7f;
+    [SerializeField] private float changeRate = 0.001f;
+    [SerializeField] private float maxAmplitude = 4f;
+    [SerializeField] private float minAmplitude = 0.7f;
     private int direction = 1;
     private bool turning = false;
 
@@ -21,18 +25,16 @@ public class Escilator : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
-        MoveSpeed += 0.001f * direction;
-        amplitude += 0.001f * direction;
-
-
+        MoveSpeed += changeRate * direction;
+        amplitude += changeRate* direction;
+        
         transform.position = CenterPoint + Mathf.Cos(Time.time * MoveSpeed) * Vector3.right * amplitude;
-        if (amplitude >= 4f && !turning)
+        if (amplitude >= maxAmplitude && !turning)
         {
             direction *= -1;
             turning = true;
         }
-        if (amplitude <= 0.7f && turning)
+        if (amplitude <= minAmplitude && turning)
         {
             direction *= -1;
             turning = false;

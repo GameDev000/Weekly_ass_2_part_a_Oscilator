@@ -13,21 +13,18 @@ public class Escilator : MonoBehaviour
     private int direction = 1;
     private bool turning = false;
 
-
-
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         CenterPoint = transform.position;
-
     }
 
     // Update is called once per frame
     void Update()
     {
         MoveSpeed += changeRate * direction;
-        amplitude += changeRate* direction;
-        
+        amplitude += changeRate * direction;
+
         transform.position = CenterPoint + Mathf.Cos(Time.time * MoveSpeed) * Vector3.right * amplitude;
         if (amplitude >= maxAmplitude && !turning)
         {

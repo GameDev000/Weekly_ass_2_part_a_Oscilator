@@ -5,12 +5,12 @@ using UnityEngine;
 public class Escilator : MonoBehaviour
 {
     public Vector3 CenterPoint;
-    public float MoveSpeed=0.7f, amplitude=0.7f;
+    public float MoveSpeed = 0.7f, amplitude = 0.7f;
     private int direction = 1;
     private bool turning = false;
-    
-    
-    
+
+
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -22,8 +22,8 @@ public class Escilator : MonoBehaviour
     void Update()
     {
 
-        MoveSpeed += 0.001f*direction;
-        amplitude += 0.001f*direction;
+        MoveSpeed += 0.001f * direction;
+        amplitude += 0.001f * direction;
 
 
         transform.position = CenterPoint + Mathf.Cos(Time.time * MoveSpeed) * Vector3.right * amplitude;
